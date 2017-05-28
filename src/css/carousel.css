@@ -1,0 +1,22 @@
+@import "./iconfont.base.css";
+.tel-carousel-ul{
+  position: relative;
+  overflow: hidden;
+}
+.tel-carousel-arrleft, .tel-carousel-arrright{
+	width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: .3s;
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    font-size: 26px;
+    opacity: .6
+}
+.tel-carousel-arrleft{
+	left: 15px
+}
+.tel-carousel-arrright{
+	right: 15px
+}

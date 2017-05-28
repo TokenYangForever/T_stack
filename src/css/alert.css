@@ -1,0 +1,53 @@
+@import "./iconfont.base.css";
+
+.tel-alert{
+    width: 100%;
+    padding: 8px 16px;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    color: #fff;
+    opacity: 1;
+    display: table;
+    transition: opacity .2s;
+    text-align: left;
+}
+.tel-alert-title{
+  font-size: 16px;
+  line-height: 18px;
+}
+.tel-alert-success{
+  background-color: #3c6;
+}
+.tel-alert-info{
+  background-color: #50bfff;
+}
+.tel-alert-warn{
+  background-color: #f7ba2a;
+}
+.tel-alert-error{
+  background-color: #ff4949;
+}
+.tel-icon-close{
+  top: 10px;
+  position: absolute;
+  right: 10px;
+}
+.tel-alert-textclose{
+  font-style: normal;
+  font-size: 13px;
+  top: 9px;
+  position: absolute;
+  right: 10px;
+}
+.tel-alert-icon{
+  margin-right: 5px;
+  font-size: 16px;
+}
+.tel-alert-des{
+  padding-left: 25px;
+  font-size: 12px;
+}
