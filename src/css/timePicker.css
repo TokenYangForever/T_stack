@@ -1,0 +1,35 @@
+@import "./iconfont.base.css";
+
+.tel-scrollbarView{
+  width: 120px;
+  max-height: 210px;
+  transform-origin: center top 0px;
+  z-index: 2008;
+  color: #48576a;
+  box-shadow: 0 2px 6px #ccc;
+  background: #fff;
+  line-height: 20px;
+  margin: 10px 0;
+  overflow-y: scroll;
+  position: absolute;
+}
+.tel-tp-value{
+  position: relative;
+  line-height: 27px
+}
+.tel-timeselect-item {
+  padding-left: 5px;
+  padding: 8px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.tel-timeselect-item.enable {
+  cursor: not-allowed;
+  color: #d1dbe5;
+}
+.tel-icon-close{
+  font-size: 14px;
+  top: 7px;
+  position: absolute;
+  right: 5px;
+}

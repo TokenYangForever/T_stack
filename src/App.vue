@@ -3,7 +3,7 @@
   <router-link to="/">首页</router-link>
     <ul class="navul">
       <li><router-link to="/alert">alert消息</router-link></li>
-      <li>loading加载</li>
+      <li><router-link to="/timep">timepicker时间选择</router-link></li>
       <li><router-link to="/carousel">carousel走马灯</router-link></li>
       <li>progress进度条</li>
       <li>progress进度条</li>

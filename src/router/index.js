@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Hello from '@/components/Hello'
 import alertdemo from '@/components/telDemo/alertDemo'
 import carouseldemo from '@/components/telDemo/carouselDemo'
+import timepicker from '@/components/telDemo/timePickDemo'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/carousel',
       name: 'carousel',
       component: carouseldemo
+    },
+    {
+      path: '/timep',
+      name: 'timepicker',
+      component: timepicker
     }
   ]
 })

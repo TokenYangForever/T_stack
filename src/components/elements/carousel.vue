@@ -1,7 +1,8 @@
 <template>
   <div class="tel-carousel"
-    @mouseenter.stop="handleMouseEnter"
-    @mouseleave.stop="handleMouseLeave"
+    @mouseenter="handleMouseEnter"
+    @mouseleave="handleMouseLeave"
+    @click="handleClick"
   >
    <div class = "tel-carousel-ul" :style="{height:height + 'px',width:width + 'px'}">
     <div class="tel-carousel-arrleft" @click="subIndex" v-show="hover || isMobile">
@@ -31,7 +32,8 @@ export default {
     return {
       items: [],
       activeIndex: 0,
-      hover: false
+      hover: false,
+      addTimer: {}
     }
   },
 
@@ -56,14 +58,30 @@ export default {
       if (!this.isMobile) {
         this.hover = true;
       }
-      // this.pauseTimer();
+      this.pauseTimer();
     },
 
     handleMouseLeave () {
       if (!this.isMobile) {
         this.hover = false;
       }
-      // this.startTimer();
+      this.startTimer();
+    },
+
+    startTimer () {
+      const _this = this
+      this.addTimer = setTimeout(function () {
+        _this.addIndex()
+        _this.startTimer()
+      }, 2000)
+    },
+
+    pauseTimer () {
+      clearTimeout(this.addTimer)
+    },
+
+    handleClick () {
+      this.pauseTimer()
     }
   },
 
@@ -72,6 +90,7 @@ export default {
     this.items.forEach((item, index) => {
       item.setTranslate(index, this.activeIndex);
     });
+    this.startTimer()
   }
 }
 </script>

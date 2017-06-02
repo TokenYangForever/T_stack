@@ -2,8 +2,8 @@
   <div class="carouselDemo">
     <h3>默认类型</h3>
     <tel-carousel
-      height="240"
-      width="300"
+      height="360"
+      width="450"
       :isMobile = "true"
     >
       <tel-carousel-item v-for="item in 4" :key="item">
